@@ -3,7 +3,7 @@ use std::cmp::Ordering;
 use std::io;
 
 fn main() {
-    println!("Guess the number!");
+    println!("Guess the number from 1 to 100!");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
@@ -25,7 +25,12 @@ fn main() {
 
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
-            Ordering::Greater => println!("Too big!"),
+            Ordering::Greater => {
+                println!("Too big!");
+                if guess > 100 {
+                     println!("The number is above 1 and below 100.");
+                }
+            }
             Ordering::Equal => {
                 println!("You won!");
                 break;
