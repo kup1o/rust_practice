@@ -1,0 +1,23 @@
+name: Rust Formatting
+
+on:
+  push:
+    branches:
+      - main
+      # Add any additional branches you want to trigger the workflow on
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Format code
+        run: cargo fmt -- --check
+
+      # You can add additional steps or actions here as needed
