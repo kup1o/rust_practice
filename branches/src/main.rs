@@ -28,6 +28,5 @@ fn main() {
         if number % 4 != 0 && number % 3 != 0 && number % 2 != 0 {
             println!("number is not divisible by 4, 3 or 2");
         }
-
     }
 }

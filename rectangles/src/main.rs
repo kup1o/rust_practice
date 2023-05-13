@@ -72,7 +72,10 @@ fn main() {
     println!("Can rect1 hold rect4? {}", rect1.can_hold(&rect4));
 
     let rect5 = Rectangle::square(20);
-    println!("The rectangle 4 has width {} and height {}.", rect5.width, rect5.height);
+    println!(
+        "The rectangle 4 has width {} and height {}.",
+        rect5.width, rect5.height
+    );
 }
 
 fn area_function(rectangle: &Rectangle) -> u32 {

@@ -19,6 +19,6 @@ mod customer {
     }
 }
 
-pub fn eat_at_cafe () {
+pub fn eat_at_cafe() {
     hosting::add_to_waitlist(); // L#10
 }

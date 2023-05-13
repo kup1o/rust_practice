@@ -7,7 +7,7 @@ fn main() {
         );
 
         let mut choice = String::new();
-        
+
         io::stdin()
             .read_line(&mut choice)
             .expect("Failed to read the line");
@@ -19,7 +19,7 @@ fn main() {
 
         if choice == 1 {
             println!("You chose to convert a temperature from celsius to fahrenheit.\nWrite a temperature in celsius:");
-            
+
             let mut celsius = String::new();
 
             io::stdin()
@@ -36,7 +36,7 @@ fn main() {
             println!("{celsius}°C = {fahrenheit}°F");
         } else if choice == 2 {
             println!("You chose to convert a temperature from fahrenheit to celsius.\nWrite a temperature in fahrenheit:");
-            
+
             let mut fahrenheit = String::new();
 
             io::stdin()
