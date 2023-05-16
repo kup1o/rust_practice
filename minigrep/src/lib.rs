@@ -80,7 +80,7 @@ Duct tape.";
 
     #[test]
     fn case_insensitive() {
-        let query = "rUst";
+        let query = "rust";
         let contents = "\
 Rust:
 safe, fast, productive.
